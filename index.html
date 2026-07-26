@@ -1,1 +1,592 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>InformatikaVerse | SMP Negeri Satap 6 Majenang</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:
+linear-gradient(135deg,#041b15,#083c2f,#0d5b46);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:700px;
+height:700px;
+
+background:#ffd70022;
+
+filter:blur(120px);
+
+top:-250px;
+right:-250px;
+
+border-radius:50%;
+
+z-index:-1;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:600px;
+height:600px;
+
+background:#00ffbb22;
+
+filter:blur(120px);
+
+bottom:-250px;
+left:-250px;
+
+border-radius:50%;
+
+z-index:-1;
+
+}
+
+header{
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+}
+
+.logo h2{
+
+color:#FFD700;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+margin-left:25px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD700;
+
+}
+
+.hero{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:50px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+line-height:1.1;
+
+}
+
+.hero h1 span{
+
+color:#FFD700;
+
+}
+
+.hero p{
+
+margin-top:25px;
+
+font-size:18px;
+
+opacity:.9;
+
+line-height:1.8;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:18px 42px;
+
+border-radius:60px;
+
+background:#FFD700;
+
+color:#083c2f;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+box-shadow:0 15px 40px rgba(255,215,0,.35);
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.robot{
+
+text-align:center;
+
+}
+
+.robot img{
+
+width:100%;
+
+max-width:500px;
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}
+
+.cards{
+
+padding:40px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:35px;
+
+border-radius:20px;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+background:#0f5f48;
+
+}
+
+.card h3{
+
+margin-top:15px;
+
+color:#FFD700;
+
+}
+
+.card p{
+
+margin-top:10px;
+
+opacity:.85;
+
+}
+
+.stats{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.stats div{
+
+background:#ffffff10;
+
+padding:30px;
+
+border-radius:18px;
+
+}
+
+.stats h2{
+
+font-size:45px;
+
+color:#FFD700;
+
+}
+
+.ai{
+
+margin:80px 8%;
+
+padding:70px;
+
+text-align:center;
+
+border-radius:25px;
+
+background:linear-gradient(135deg,#0b6d53,#0b3429);
+
+}
+
+.ai h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.ai p{
+
+font-size:18px;
+
+opacity:.9;
+
+}
+
+footer{
+
+padding:35px;
+
+text-align:center;
+
+margin-top:60px;
+
+background:#03150f;
+
+color:#bbb;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png">
+
+<div>
+
+<h2>INFORMATIKAVERSE</h2>
+
+<small>SMP Negeri Satap 6 Majenang</small>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="#">Beranda</a>
+
+<a href="#">Kelas VII</a>
+
+<a href="#">Kelas VIII</a>
+
+<a href="#">Kelas IX</a>
+
+<a href="#">Video</a>
+
+<a href="#">Quiz</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+
+Belajar Informatika
+
+<span>Bersama AI</span>
+
+</h1>
+
+<p>
+
+Selamat datang di InformatikaVerse.
+
+Platform pembelajaran digital SMP Negeri Satap 6 Majenang.
+
+Belajar materi, coding, video, kuis, serta bertanya kepada INFOBOT AI kapan saja.
+
+</p>
+
+<a
+
+class="btn"
+
+target="_blank"
+
+href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt">
+
+🚀 MULAI BELAJAR DENGAN AI
+
+</a>
+
+</div>
+
+<div class="robot">
+
+<img src="robot.png">
+
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<h1>📚</h1>
+
+<h3>Kelas VII</h3>
+
+<p>Materi lengkap semester ganjil dan genap.</p>
+
+</div>
+
+<div class="card">
+
+<h1>💻</h1>
+
+<h3>Belajar Coding</h3>
+
+<p>HTML, CSS, Scratch, Python dan lainnya.</p>
+
+</div>
+
+<div class="card">
+
+<h1>🎥</h1>
+
+<h3>Video Pembelajaran</h3>
+
+<p>Kumpulan video pembelajaran Informatika.</p>
+
+</div>
+
+<div class="card">
+
+<h1>🤖</h1>
+
+<h3>INFOBOT AI</h3>
+
+<p>Asisten AI yang siap membantu belajar 24 jam.</p>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+
+<h2>120+</h2>
+
+<p>Materi</p>
+
+</div>
+
+<div>
+
+<h2>300+</h2>
+
+<p>Video</p>
+
+</div>
+
+<div>
+
+<h2>500+</h2>
+
+<p>Latihan</p>
+
+</div>
+
+<div>
+
+<h2>24/7</h2>
+
+<p>AI Support</p>
+
+</div>
+
+</section>
+
+<section class="ai">
+
+<h2>🤖 INFOBOT AI</h2>
+
+<p>
+
+Klik tombol di bawah untuk mulai belajar bersama AI.
+
+</p>
+
+<a
+
+class="btn"
+
+target="_blank"
+
+href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt">
+
+Mulai Chat AI
+
+</a>
+
+</section>
+
+<footer>
+
+© 2026 InformatikaVerse • SMP Negeri Satap 6 Majenang
+
+</footer>
+
+</body>
+</html>
