@@ -4,12 +4,12 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>InformatikaVerse | SMP Negeri Satap 6 Majenang</title>
 
-<meta name="description" content="Platform Pembelajaran Informatika SMP Negeri Satap 6 Majenang">
+<meta name="description"
+content="Portal Pembelajaran Informatika berbasis AI untuk SMP Negeri Satap 6 Majenang">
 
 <link rel="stylesheet" href="style.css">
 
@@ -20,19 +20,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ==========================================
+LOADING SCREEN
+========================================== -->
+
+<div id="loader">
+
+<div class="loader-logo">
+
+<img src="assets/logo-sekolah.png" alt="Logo">
+
+<h2>INFORMATIKAVERSE</h2>
+
+<p>Loading Future Education...</p>
+
+</div>
+
+<div class="loader-ring"></div>
+
+</div>
+
+<!-- ==========================================
+BACKGROUND EFFECT
+========================================== -->
+
+<div class="bg-grid"></div>
+
+<div class="bg-glow glow-1"></div>
+
+<div class="bg-glow glow-2"></div>
+
+<div id="particles"></div>
+
+<!-- ==========================================
+HEADER
+========================================== -->
 
 <header class="header">
 
 <div class="container">
 
-<a href="index.html" class="logo">
+<a href="#" class="logo">
 
 <img src="assets/logo-sekolah.png" alt="Logo SMP">
 
@@ -48,13 +82,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <nav class="navbar">
 
-<a href="index.html" class="active">
+<a href="#" class="active">
 <i class="fa-solid fa-house"></i>
 Beranda
 </a>
 
 <a href="pages/kelas7.html">
-<i class="fa-solid fa-book"></i>
+<i class="fa-solid fa-book-open"></i>
 Kelas VII
 </a>
 
@@ -78,81 +112,87 @@ Video
 Quiz
 </a>
 
-<a href="pages/ai.html" class="btn-ai-nav">
+<a class="btn-ai-nav"
+
+target="_blank"
+
+href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt">
+
 🤖 INFOBOT AI
+
 </a>
 
 </nav>
-
-<div class="menu-toggle">
-
-<i class="fa-solid fa-bars"></i>
-
-</div>
 
 </div>
 
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ==========================================
+HERO
+========================================== -->
 
 <section class="hero">
 
 <div class="container hero-grid">
 
+<!-- LEFT -->
+
 <div class="hero-left">
 
 <div class="badge">
 
-✨ Platform Pembelajaran Digital
+🚀 AI Powered Learning Platform
 
 </div>
 
 <h1>
 
-Belajar Informatika
+Belajar
 
-<span>Bersama AI</span>
+<span>Informatika</span>
+
+Lebih Modern
+
+Bersama
+
+<span>INFOBOT AI</span>
 
 </h1>
 
 <p>
 
-Selamat datang di <b>InformatikaVerse</b>.
-
 Portal pembelajaran digital resmi
 
-<b>SMP Negeri Satap 6 Majenang</b>
+SMP Negeri Satap 6 Majenang.
 
-yang menghadirkan materi, video,
+Belajar materi,
 
-quiz interaktif serta AI Assistant
+menonton video,
 
-untuk membantu belajar kapan saja.
+mengerjakan quiz,
+
+dan bertanya kepada AI
+
+dalam satu platform.
 
 </p>
 
 <div class="hero-button">
 
-<a
-
-href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
-
-target="_blank"
+<a href="#kelas"
 
 class="btn-primary">
 
-🚀 Mulai Belajar dengan AI
+🚀 Mulai Belajar
 
 </a>
 
-<a
-
-href="#kelas"
+<a href="#features"
 
 class="btn-secondary">
 
-📚 Lihat Materi
+📚 Jelajahi Materi
 
 </a>
 
@@ -194,153 +234,65 @@ class="btn-secondary">
 
 </div>
 
-<div class="ai-image">
-    <div class="glow"></div>
-
-    <img
-        src="assets/robot-ai.png"
-        class="robot"
-        alt="Robot AI">
-
-</div>
 </div>
 
-</section>
+<!-- RIGHT -->
 
-<!-- ================= QUICK MENU ================= -->
+<div class="hero-right">
 
-<section class="quick-menu" id="kelas">
+<div class="robot-card">
 
-<div class="container">
+<div class="robot-glow"></div>
 
-<div class="section-title">
+<img
 
-<h2>
+src="assets/robot-ai.png"
 
-🚀 Jelajahi InformatikaVerse
+class="robot"
 
-</h2>
+alt="INFOBOT AI">
+
+<div class="speech">
+
+<h3>
+
+👋 Halo!
+
+Saya INFOBOT AI
+
+</h3>
 
 <p>
 
-Pilih layanan pembelajaran yang ingin digunakan.
+Selamat datang di
+
+InformatikaVerse.
+
+Siap belajar hari ini?
 
 </p>
 
-</div>
+<div class="speech-buttons">
 
-<div class="menu-grid">
+<a
 
-<a href="pages/kelas7.html" class="menu-card">
+target="_blank"
 
-<div class="icon">
+href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
 
-📘
+class="mini-btn">
 
-</div>
-
-<h3>Kelas VII</h3>
-
-<p>
-
-Materi lengkap Semester 1 & 2
-
-</p>
-
-</a>
-
-<a href="pages/kelas8.html" class="menu-card">
-
-<div class="icon">
-
-📗
-
-</div>
-
-<h3>Kelas VIII</h3>
-
-<p>
-
-Belajar Informatika secara interaktif
-
-</p>
-
-</a>
-
-<a href="pages/kelas9.html" class="menu-card">
-
-<div class="icon">
-
-📕
-</div>
-
-<h3>Kelas IX</h3>
-
-<p>
-
-Persiapan ujian dan materi lanjutan
-
-</p>
-
-</a>
-
-<a href="pages/video.html" class="menu-card">
-
-<div class="icon">
-
-🎥
-
-</div>
-
-<h3>Video</h3>
-
-<p>
-
-Video pembelajaran pilihan
-
-</p>
-
-</a>
-
-<a href="pages/quiz.html" class="menu-card">
-
-<div class="icon">
-
-📝
-
-</div>
-
-<h3>Quiz</h3>
-
-<p>
-
-Latihan soal interaktif
-
-</p>
+🤖 Tanya AI
 
 </a>
 
 <a
 
-href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
+href="#kelas"
 
-target="_blank"
+class="mini-btn outline">
 
-class="menu-card">
-
-<div class="icon">
-
-🤖
-
-</div>
-
-<h3>INFOBOT AI</h3>
-
-<p>
-
-Belajar bersama AI kapan saja
-
-</p>
+📚 Materi
 
 </a>
 
@@ -348,46 +300,112 @@ Belajar bersama AI kapan saja
 
 </div>
 
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- ================= FITUR UNGGULAN ================= -->
+<!-- ==========================================
+WAVE
+========================================== -->
 
-<section class="features">
+<div class="wave-divider">
+
+<svg viewBox="0 0 1440 150">
+
+<path fill="#071f18"
+
+d="M0,64L80,69.3C160,75,320,85,480,85.3C640,85,800,75,960,58.7C1120,43,1280,21,1360,10.7L1440,0L1440,160L1360,160C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160L0,160Z">
+
+</path>
+
+</svg>
+
+</div>
+
+<!-- ==========================================
+BAGIAN 2 DIMULAI DARI SINI
+========================================== -->
+<!-- ==========================================
+FEATURES
+========================================== -->
+
+<section id="features" class="features">
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>✨ Fitur Unggulan</h2>
+<span class="section-badge">✨ Fitur Unggulan</span>
 
-<p>Semua yang dibutuhkan siswa tersedia dalam satu portal.</p>
+<h2>Mengapa Memilih InformatikaVerse?</h2>
+
+<p>
+Platform pembelajaran digital modern yang menggabungkan materi, video,
+kuis, dan kecerdasan buatan dalam satu tempat.
+</p>
 
 </div>
 
 <div class="feature-grid">
 
 <div class="feature-card">
-<i class="fa-solid fa-laptop-code"></i>
-<h3>Belajar Coding</h3>
-<p>HTML, CSS, JavaScript, Scratch, Python, dan materi pemrograman lainnya.</p>
+
+<div class="feature-icon">
+<i class="fa-solid fa-book-open"></i>
+</div>
+
+<h3>Materi Interaktif</h3>
+
+<p>
+Materi disusun berdasarkan Kurikulum Nasional dengan tampilan modern dan mudah dipahami.
+</p>
+
 </div>
 
 <div class="feature-card">
+
+<div class="feature-icon">
 <i class="fa-solid fa-robot"></i>
+</div>
+
 <h3>INFOBOT AI</h3>
-<p>Asisten AI yang siap membantu menjelaskan materi dan menjawab pertanyaan.</p>
+
+<p>
+Belajar bersama AI kapan saja untuk membantu memahami konsep Informatika.
+</p>
+
 </div>
 
 <div class="feature-card">
+
+<div class="feature-icon">
 <i class="fa-solid fa-circle-play"></i>
+</div>
+
 <h3>Video Pembelajaran</h3>
-<p>Kumpulan video pilihan yang mudah dipahami siswa.</p>
+
+<p>
+Video singkat, jelas, dan menarik untuk memperkuat pemahaman siswa.
+</p>
+
 </div>
 
 <div class="feature-card">
-<i class="fa-solid fa-file-circle-question"></i>
-<h3>Quiz Interaktif</h3>
-<p>Latihan soal untuk menguji pemahaman setiap bab.</p>
+
+<div class="feature-icon">
+<i class="fa-solid fa-medal"></i>
+</div>
+
+<h3>Achievement</h3>
+
+<p>
+Kumpulkan lencana dan raih pencapaian setiap kali menyelesaikan materi.
+</p>
+
 </div>
 
 </div>
@@ -396,51 +414,45 @@ Belajar bersama AI kapan saja
 
 </section>
 
-<!-- ================= STATISTIK ================= -->
+<!-- ==========================================
+STATISTICS
+========================================== -->
 
 <section class="statistics">
 
 <div class="container">
 
-<div class="section-title">
-
-<h2>📊 Statistik InformatikaVerse</h2>
-
-<p>Portal pembelajaran yang terus berkembang.</p>
-
-</div>
-
 <div class="stats-grid">
 
 <div class="stat-box">
 
-<h2 class="counter">120</h2>
+<h2>120+</h2>
 
-<p>Materi</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2 class="counter">350</h2>
-
-<p>Video</p>
+<p>Materi Informatika</p>
 
 </div>
 
 <div class="stat-box">
 
-<h2 class="counter">500</h2>
+<h2>300+</h2>
 
-<p>Quiz</p>
+<p>Video Pembelajaran</p>
 
 </div>
 
 <div class="stat-box">
 
-<h2 class="counter">24</h2>
+<h2>500+</h2>
 
-<p>Jam AI Support</p>
+<p>Latihan & Quiz</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>24/7</h2>
+
+<p>Dukungan INFOBOT AI</p>
 
 </div>
 
@@ -450,55 +462,74 @@ Belajar bersama AI kapan saja
 
 </section>
 
-<!-- ================= AI CENTER ================= -->
+<!-- ==========================================
+AI CLASSROOM
+========================================== -->
 
 <section class="ai-center">
 
-<div class="container">
+<div class="container ai-grid">
 
-<div class="ai-grid">
+<div class="ai-content">
 
-<div>
+<span class="section-badge">
 
-<h2>🤖 INFOBOT AI</h2>
+🤖 AI Classroom
+
+</span>
+
+<h2>
+
+Belajar Bersama INFOBOT AI
+
+</h2>
 
 <p>
 
-Belajar menjadi lebih mudah dengan bantuan
-
-<b>SMPN SATAP 6 MAJENANG SISWA GPT</b>.
-
-Tanyakan materi, minta ringkasan,
-
-buat latihan soal,
-
-hingga belajar coding bersama AI.
+INFOBOT AI membantu menjelaskan materi,
+memberikan contoh,
+serta menjawab pertanyaan siswa secara interaktif.
 
 </p>
 
 <ul class="ai-list">
 
-<li>✅ Tanya Materi</li>
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Penjelasan Materi
+</li>
 
-<li>✅ Ringkasan Bab</li>
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Contoh Coding
+</li>
 
-<li>✅ Latihan Soal</li>
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Latihan HOTS
+</li>
 
-<li>✅ Belajar Coding</li>
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Bimbingan Belajar
+</li>
 
-<li>✅ Pendamping Belajar 24 Jam</li>
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Persiapan Ujian
+</li>
 
 </ul>
 
 <a
 
-href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
-
 target="_blank"
+
+href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
 
 class="btn-primary">
 
-🚀 Buka INFOBOT AI
+🤖 Buka INFOBOT AI
 
 </a>
 
@@ -506,9 +537,15 @@ class="btn-primary">
 
 <div class="ai-image">
 
-<img src="../assets/robot-ai.png" alt="AI Robot">
+<div class="glow"></div>
 
-</div>
+<img
+
+src="assets/robot-ai.png"
+
+class="robot"
+
+alt="INFOBOT AI">
 
 </div>
 
@@ -516,41 +553,143 @@ class="btn-primary">
 
 </section>
 
-<!-- ================= PROFIL GURU ================= -->
+<!-- ==========================================
+DASHBOARD PREVIEW
+========================================== -->
 
-<section class="teacher">
+<section class="dashboard-preview">
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>👨‍🏫 Guru Pengampu</h2>
+<span class="section-badge">
 
-<p>Pengelola InformatikaVerse</p>
+📊 Dashboard
+
+</span>
+
+<h2>
+
+Preview Dashboard Siswa
+
+</h2>
+
+<p>
+
+Pantau perkembangan belajar secara real-time.
+
+</p>
 
 </div>
 
-<div class="teacher-card">
+<div class="dashboard-card">
 
-<img src="assets/guru.png" alt="Guru">
+<div class="profile">
+
+<div class="avatar">
+
+👨‍🎓
+
+</div>
 
 <div>
 
-<h2>A. Sigit Purwoatmoko, S.Kom.</h2>
+<h3>
 
-<h4>Guru Informatika</h4>
+Halo, Siswa!
+
+</h3>
 
 <p>
 
-Selamat datang di InformatikaVerse.
-
-Semoga portal ini dapat membantu siswa belajar
-
-lebih mudah, menyenangkan, dan memanfaatkan AI
-
-secara bijak.
+Selamat datang kembali.
 
 </p>
+
+</div>
+
+</div>
+
+<div class="progress-group">
+
+<div class="progress-item">
+
+<label>Progress Materi</label>
+
+<div class="progress-bar">
+
+<div class="progress-fill" style="width:72%;"></div>
+
+</div>
+
+<span>72%</span>
+
+</div>
+
+<div class="progress-item">
+
+<label>Quiz</label>
+
+<div class="progress-bar">
+
+<div class="progress-fill" style="width:84%;"></div>
+
+</div>
+
+<span>84%</span>
+
+</div>
+
+<div class="progress-item">
+
+<label>Level INFOBOT</label>
+
+<div class="progress-bar">
+
+<div class="progress-fill" style="width:56%;"></div>
+
+</div>
+
+<span>Level 8</span>
+
+</div>
+
+</div>
+
+<div class="dashboard-achievement">
+
+<div class="badge-card">
+
+🏅
+
+<h4>Explorer</h4>
+
+</div>
+
+<div class="badge-card">
+
+🚀
+
+<h4>Coder</h4>
+
+</div>
+
+<div class="badge-card">
+
+🤖
+
+<h4>AI Friend</h4>
+
+</div>
+
+<div class="badge-card">
+
+⭐
+
+<h4>Top Learner</h4>
+
+</div>
 
 </div>
 
@@ -560,70 +699,165 @@ secara bijak.
 
 </section>
 
-<!-- ================= TENTANG ================= -->
+<!-- ==========================================
+BAGIAN 3 DIMULAI DARI SINI
+========================================== -->
+<!-- ==========================================
+KELAS
+========================================== -->
 
-<section class="about">
+<section id="kelas" class="kelas">
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>🏫 Tentang InformatikaVerse</h2>
+<span class="section-badge">📚 Jenjang Belajar</span>
 
-</div>
-
-<p class="about-text">
-
-InformatikaVerse merupakan portal pembelajaran digital
-
-SMP Negeri Satap 6 Majenang
-
-yang mengintegrasikan materi,
-
-video pembelajaran,
-
-quiz,
-
-dan Artificial Intelligence
-
-untuk mendukung pembelajaran Informatika
-
-secara modern.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ================= CALL TO ACTION ================= -->
-
-<section class="cta">
-
-<div class="container">
-
-<h2>🚀 Siap Belajar Bersama AI?</h2>
+<h2>Pilih Kelasmu</h2>
 
 <p>
-
-Masuk ke INFOBOT AI dan mulai belajar Informatika dengan cara yang lebih interaktif.
-
+Masuk ke kelas sesuai jenjang dan mulai belajar bersama INFOBOT AI.
 </p>
 
-<a
-href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
-target="_blank"
-class="btn-primary">
+</div>
 
-🤖 MULAI BELAJAR SEKARANG
+<div class="kelas-grid">
+
+<a href="pages/kelas7.html" class="kelas-card">
+
+<div class="kelas-icon">7️⃣</div>
+
+<h3>Kelas VII</h3>
+
+<p>Berpikir Komputasional, Sistem Komputer, Jaringan, Data, Algoritma.</p>
+
+<span class="kelas-btn">Masuk Kelas →</span>
+
+</a>
+
+<a href="pages/kelas8.html" class="kelas-card">
+
+<div class="kelas-icon">8️⃣</div>
+
+<h3>Kelas VIII</h3>
+
+<p>Pemrograman, Analisis Data, Internet, Keamanan Digital.</p>
+
+<span class="kelas-btn">Masuk Kelas →</span>
+
+</a>
+
+<a href="pages/kelas9.html" class="kelas-card">
+
+<div class="kelas-icon">9️⃣</div>
+
+<h3>Kelas IX</h3>
+
+<p>Proyek Informatika, AI, Persiapan Ujian dan Portofolio.</p>
+
+<span class="kelas-btn">Masuk Kelas →</span>
 
 </a>
 
 </div>
 
+</div>
+
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- ==========================================
+VIDEO & QUIZ
+========================================== -->
+
+<section class="learning-center">
+
+<div class="container">
+
+<div class="learning-grid">
+
+<div class="learning-card">
+
+<i class="fa-solid fa-circle-play"></i>
+
+<h3>Video Pembelajaran</h3>
+
+<p>
+Koleksi video singkat untuk membantu memahami materi secara visual.
+</p>
+
+<a href="pages/video.html" class="btn-primary">
+🎥 Lihat Video
+</a>
+
+</div>
+
+<div class="learning-card">
+
+<i class="fa-solid fa-clipboard-question"></i>
+
+<h3>Quiz Center</h3>
+
+<p>
+Latihan soal interaktif dengan skor dan umpan balik instan.
+</p>
+
+<a href="pages/quiz.html" class="btn-primary">
+📝 Mulai Quiz
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+CALL TO ACTION
+========================================== -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Siap Menjadi Generasi Digital?</h2>
+
+<p>
+
+Belajar bersama INFOBOT AI, selesaikan materi,
+kumpulkan achievement,
+dan tingkatkan kemampuan Informatika setiap hari.
+
+</p>
+
+<div class="hero-button">
+
+<a
+target="_blank"
+href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
+class="btn-primary">
+
+🤖 Tanya INFOBOT AI
+
+</a>
+
+<a href="#kelas" class="btn-secondary">
+
+📚 Mulai Belajar
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+FOOTER
+========================================== -->
 
 <footer>
 
@@ -631,13 +865,16 @@ class="btn-primary">
 
 <div>
 
-<h2>INFORMATIKAVERSE</h2>
+<img
+src="assets/logo-sekolah.png"
+style="width:80px;margin-bottom:15px;">
+
+<h2>InformatikaVerse</h2>
 
 <p>
 
-Platform Pembelajaran Digital
-
-SMP Negeri Satap 6 Majenang
+Portal Pembelajaran Digital berbasis AI
+untuk SMP Negeri Satap 6 Majenang.
 
 </p>
 
@@ -645,11 +882,11 @@ SMP Negeri Satap 6 Majenang
 
 <div>
 
-<h3>Menu</h3>
+<h3>Navigasi</h3>
 
 <ul>
 
-<li><a href="index.html">Beranda</a></li>
+<li><a href="#">Beranda</a></li>
 
 <li><a href="pages/kelas7.html">Kelas VII</a></li>
 
@@ -703,27 +940,35 @@ INFOBOT AI
 
 </p>
 
+<p>
+
+💚 InformatikaVerse v4.0
+
+</p>
+
 </div>
 
 </div>
 
 <div class="copyright">
 
-© 2026 InformatikaVerse • All Rights Reserved
+© 2026 InformatikaVerse • SMP Negeri Satap 6 Majenang • All Rights Reserved.
 
 </div>
 
 </footer>
 
-<!-- ================= FLOATING AI ================= -->
+<!-- ==========================================
+FLOATING AI
+========================================== -->
 
 <a
 
 class="floating-ai"
 
-href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
-
 target="_blank"
+
+href="https://chatgpt.com/g/g-6a5e278dcbcc8191a40e6dcc1c20e42e-smpn-satap-6-majenang-siswa-gpt"
 
 title="INFOBOT AI">
 
@@ -731,7 +976,9 @@ title="INFOBOT AI">
 
 </a>
 
-<!-- ================= BACK TO TOP ================= -->
+<!-- ==========================================
+BACK TO TOP
+========================================== -->
 
 <button id="topBtn">
 
@@ -739,10 +986,11 @@ title="INFOBOT AI">
 
 </button>
 
-<!-- ================= SCRIPT ================= -->
+<!-- ==========================================
+SCRIPT
+========================================== -->
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
